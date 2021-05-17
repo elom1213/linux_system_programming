@@ -15,7 +15,7 @@ int main()
 	if(pid1 == 0)
 	{
 		printf("[%d] 자식 프로세스[1] 시작\n", getpid());
-		sleep(1);
+		sleep(5);
 		printf("[%d] 자식 프로세스[1] 종류\n", getpid());
 		exit(1);
 	}
@@ -24,7 +24,7 @@ int main()
 	if(pid2 == 0)
 	{
 		printf("[%d] 자식 프로세스[2] 시작\n", getpid());
-		sleep(3);
+		sleep(9);
 		printf("[%d] 자식 프로세스[2] 종류\n", getpid());
 		exit(2);
 
