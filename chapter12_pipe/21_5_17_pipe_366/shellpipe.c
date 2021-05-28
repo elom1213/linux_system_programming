@@ -39,7 +39,4 @@ int main(int arc, char *argv[])
 		execlp(command2, command2, NULL);
 		perror("pipe error");
 	}
-
-	//printf("str addr => %p\ncmd1 addr => %p\n", str, command1);
-	//printf("c1 => %s\nc2 => %s", command1, command2);
 }

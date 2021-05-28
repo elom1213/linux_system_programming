@@ -13,8 +13,8 @@ int main()
 	int fd1, fd2, n;
 	char inmsg[MAXLINE];
 
-	fd1 = open("./chatfifo1", O_RDONLY);
-	fd2 = open("./chatfifo2", O_WRONLY);
+	fd1 = open("./pjh1", O_RDONLY);
+	fd2 = open("./pjh2", O_WRONLY);
 	if(fd1 == -1||fd2 == -1)
 	{
 		perror("open");

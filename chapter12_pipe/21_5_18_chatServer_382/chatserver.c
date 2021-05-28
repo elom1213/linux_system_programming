@@ -13,19 +13,19 @@ int main()
 	int fd1, fd2, n;
 	char msg[MAXLINE];
 
-	if(mkfifo("./chatfifo1", 0666) == -1)
+	if(mkfifo("./pjh1", 0666) == -1)
 	{
 		perror("mkfifo");
 		exit(1);
 	}
-	if(mkfifo("./chatfifo2", 0666) == -1)
+	if(mkfifo("./pjh2", 0666) == -1)
 	{
 		perror("mkfifo");
 		exit(2);
 	}
 
-	fd1 = open("./chatfifo1", O_WRONLY);
-	fd2 = open("./chatfifo2", O_RDONLY);
+	fd1 = open("./pjh1", O_WRONLY);
+	fd2 = open("./pjh2", O_RDONLY);
 	if(fd1 == -1||fd2 == -1)
 	{
 		perror("open");
